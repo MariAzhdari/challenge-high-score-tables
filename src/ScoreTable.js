@@ -13,12 +13,12 @@ return(
     </tr>
         </thead>
         <tbody>
-            {item.scores.map(element =>
+            {item.scores.map(element=>
             <tr>
                 <td>{element.n}</td>
                 <td>{element.s}</td>
            </tr>
-           )
+           )}
     </tbody>
     </table>
     ))}
