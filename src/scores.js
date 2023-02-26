@@ -62,8 +62,6 @@ let allCountryScores = [
     ],
   },
 ];
-console.log(allCountryScores);
-
 
 
 export default allCountryScores;
