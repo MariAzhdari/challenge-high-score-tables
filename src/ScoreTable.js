@@ -1,18 +1,19 @@
 import React from "react" ;
-
+import "./App.css";
 
 const ScoresTable = (props) => {
 return(
-<div>
+<div className="main-text">
     <h2>High score per country</h2>
     {props.allCountryScores.map((item,id) =>(
-         <table Key = {id}>
+        <div className="container">
+         <table  className="tbl" Key = {id}>
         <thead>
-      <tr>
+      <tr >
         <th>High scores : {item.name} </th>
     </tr>
         </thead>
-        <tbody>
+        <tbody className="tbody">
             {item.scores.map(element=>
             <tr>
                 <td>{element.n}</td>
@@ -21,6 +22,7 @@ return(
            )}
     </tbody>
     </table>
+    </div>
     ))}
 </div>
   
